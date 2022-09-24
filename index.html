@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Instagram</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container--left">
+            <img src="./assets/images/celular.png" alt="">
+            <img src="./assets/images/insta1.png" alt="" class="img-troca">
+            <img src="./assets/images/insta2.png" alt="" class="img-troca" id="troca-imagem">
+        </div>
+
+        <div class="container--right">
+            <div class="container--login">
+                <img src="./assets/images/insta-logo.png" alt="">
+                <input type="text" name="user" placeholder="Telefone, nome de usuário ou email">
+                <input type="password" name="password" placeholder="Senha">
+                <button> Entrar </button>
+                <div class="ou">
+                    <div class="line"></div>
+                    <div class="text"> ou </div>
+                    <div class="line"></div>
+                </div>
+                <div class="facebook">
+                    <img src="./assets/images/logo-facebook.png" alt="">
+                    <a href="" class=> Entrar com o Facebook </a>
+                </div>
+                <a href="" class="password"> Esqueceu a senha? </a>
+            </div>
+
+            <div class="container--register">
+                <p> Não tem uma conta? <a href="" class="register"> Cadastre-se </a></p>
+            </div>
+
+            <p class="app"> Obtenha o aplicativo. </p>
+
+            <div class="container--apps">
+                <img src="./assets/images/ios.png" alt="">
+                <img src="./assets/images/google.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let imagem = document.getElementById("troca-imagem")
+    
+        function trocaImagem() {
+    
+            if (imagem.style.opacity == 0) {
+                imagem.style.opacity = 1
+            }
+            else {
+                imagem.style.opacity = 0
+            }
+        }
+    
+        setInterval(function () {
+            trocaImagem()
+        }, 4000);
+    
+    </script>
+</body>
+</html>
